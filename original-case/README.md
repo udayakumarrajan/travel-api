@@ -50,12 +50,12 @@ Based on the user entered search criteria, application will find the right fligh
 
 In modern software architecture, we need to build more de-coupled system to serve the purpose, so I have decided to create a Travel API with micro services architecture and de-coupled from Flights and Fare System. I have created my mock data of flights and fares as a JSON document with the assumption of those two services are different micro services which Travel API is consuming them to show the fares for user input.
 
-##Statistics 
+## Statistics 
 Travel API system is fully integrated and tracking the each request in received to system and monitoring the system performance of service call. You can use the below link to show statistics data of Travel API
 
 go to: [http://localhost:9000/travel/statistics.html](http://localhost:9000/travel/statistics.html)
 
-##Sample Response Structure
+## Sample Response Structure
 ```{
   "status": "Success",
   "fares": [
@@ -72,7 +72,10 @@ go to: [http://localhost:9000/travel/statistics.html](http://localhost:9000/trav
 } 
 ```
 
-##More Details
+## More Details
 Please refer below link for more details about data model and screen shots
+
+[Design Document](https://github.com/udayakumarrajan/travel-api/blob/master/original-case/document/Travel%20API%20Design%20Document.pdf)
+
 
 
