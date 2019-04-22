@@ -10,8 +10,10 @@ Create a user interface and  web user interface where a customer of the site cou
 
 	1. Java 8
 	2. Spring boot 2.x
-	3. JQuery
-	4. HTML
+	3. swagger 2.9.x
+	4. Gradle
+	5. JQuery
+	6. HTML
  
 ### How to build and run
 ###### Windows
