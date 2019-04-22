@@ -6,7 +6,7 @@ Create a user interface and  web user interface where a customer of the site cou
  * Be able to select a destination.
  * Retrieve a fare offer for the given origin-destination combination.
  
-##Technology Used
+## Technology Used
 
 	1. Java 8
 	2. Spring boot 2.x
@@ -44,7 +44,7 @@ Please use [http://localhost:9000/travel/swagger-ui.html](http://localhost:9000/
 	http://localhost:9000/travel/searchFares		-X POST
 	http://localhost:9000/travel/statistics_data		-X GET
 ## Approach and why?
-Based on the user entered search criteria, application will find the right flights based on the origin, destination and departure date. And it will check whether any applicable fares are available for the matched flight based on the flight id which is there in fare data mode.
+Based on the user entered search criteria, application will find the right flights based on the origin, destination and departure date. And it will check whether any applicable fares are available for the matched flight based on the flight id which is there in fare data model.
 
 ### why?
 
