@@ -1,0 +1,368 @@
+[
+	{
+		"id": 1,
+		"origin": "DXB",
+		"destination": "AMS",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "0001",
+		"flightTime": "7h 30m",
+		"departTime": "08:40",
+		"arrivalTime": "13:35"
+	},
+	{
+		"id": 2,
+		"origin": "DXB",
+		"destination": "MUC",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "002",
+		"flightTime": "6h 45m",
+		"departTime": "08:40",
+		"arrivalTime": "13:35"
+	},
+		{
+		"id": 3,
+		"origin": "DXB",
+		"destination": "HEL",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "003",
+		"flightTime": "7h 5m",
+		"departTime": "07:40",
+		"arrivalTime": "13:35"
+	},
+	{
+		"id": 4,
+		"origin": "DXB",
+		"destination": "MAA",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "004",
+		"flightTime": "4h 00m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 5,
+		"origin": "DXB",
+		"destination": "EIN",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "005",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 6,
+		"origin": "DXB",
+		"destination": "FRA",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "006",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+		{
+		"id": 7,
+		"origin": "DXB",
+		"destination": "ZRH",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "007",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 8,
+		"origin": "AMS",
+		"destination": "DXB",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "008",
+		"flightTime": "7h 45m",
+		"departTime": "08:40",
+		"arrivalTime": "13:35"
+	},
+	{
+		"id": 9,
+		"origin": "MUC",
+		"destination": "DXB",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "009",
+		"flightTime": "6h 45m",
+		"departTime": "08:40",
+		"arrivalTime": "13:35"
+	},
+		{
+		"id": 10,
+		"origin": "HEL",
+		"destination": "DXB",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "010",
+		"flightTime": "7h 5m",
+		"departTime": "07:40",
+		"arrivalTime": "13:35"
+	},
+	{
+		"id": 11,
+		"origin": "MAA",
+		"destination": "DXB",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "011",
+		"flightTime": "4h 00m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 12,
+		"origin": "EIN",
+		"destination": "DXB",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "012",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 13,
+		"origin": "FRA",
+		"destination": "DXB",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "013",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+		{
+		"id": 14,
+		"origin": "ZRH",
+		"destination": "DXB",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "014",
+		"flightTime": "7h 50m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	
+	{
+		"id": 15,
+		"origin": "AMS",
+		"destination": "MUC",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "015",
+		"flightTime": "1h 25m",
+		"departTime": "00:40",
+		"arrivalTime": "02:35"
+	},
+		{
+		"id": 16,
+		"origin": "AMS",
+		"destination": "HEL",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "016",
+		"flightTime": "2h 25m",
+		"departTime": "07:40",
+		"arrivalTime": "09:35"
+	},
+	{
+		"id": 17,
+		"origin": "AMS",
+		"destination": "MAA",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "017",
+		"flightTime": "12h 0m",
+		"departTime": "00:40",
+		"arrivalTime": "01:35"
+	},
+	{
+		"id": 18,
+		"origin": "AMS",
+		"destination": "EIN",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "018",
+		"flightTime": "24h 0m",
+		"departTime": "02:40",
+		"arrivalTime": "02:35"
+	},
+	{
+		"id": 19,
+		"origin": "AMS",
+		"destination": "FRA",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "019",
+		"flightTime": "1h 10m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+		{
+		"id": 20,
+		"origin": "AMS",
+		"destination": "ZRH",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "020",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 21,
+		"origin": "MUC",
+		"destination": "AMS",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "021",
+		"flightTime": "6h 45m",
+		"departTime": "08:40",
+		"arrivalTime": "13:35"
+	},
+		{
+		"id": 22,
+		"origin": "HEL",
+		"destination": "AMS",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "022",
+		"flightTime": "7h 5m",
+		"departTime": "07:40",
+		"arrivalTime": "13:35"
+	},
+	{
+		"id": 23,
+		"origin": "MAA",
+		"destination": "AMS",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "023",
+		"flightTime": "4h 00m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 24,
+		"origin": "EIN",
+		"destination": "AMS",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "024",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+	{
+		"id": 25,
+		"origin": "FRA",
+		"destination": "AMS",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "025",
+		"flightTime": "7h 5m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	},
+		{
+		"id": 26,
+		"origin": "ZRH",
+		"destination": "AMS",
+		"validBetween": {
+			"start" : "2019-01-01",
+			 "end"  : "2019-12-31"
+		 },
+		"carrierCode" : "KL",
+		"flightNumber" : "026",
+		"flightTime": "7h 50m",
+		"departTime": "02:40",
+		"arrivalTime": "08:35"
+	}
+
+]

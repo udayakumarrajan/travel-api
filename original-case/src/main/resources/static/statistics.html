@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="static/css/style.css">
+<style type="text/css">
+.zui-table {
+	    border: solid 1px #DDEEEE;
+	    border-collapse: collapse;
+	    border-spacing: 0;
+	    font: normal 13px Century Gothic, CenturyGothi,AppleGothic,sans-serif ;	    
+	    margin: auto;
+	    margin-top:50px;
+	    vertical-align: middle;
+	}
+	.zui-table thead th {
+	    background-color: #FFC107;
+	    border: solid 1px #DDEEEE;
+	    color: white;
+	    padding: 10px;
+	    text-align: left;
+	    font-size: 1.1em;
+	    font-weight: bold;
+	}
+	.zui-table tbody td {
+	    border: solid 1px #DDEEEE;
+	    color: white;
+	    padding: 10px;
+	}
+	
+	
+	</style>
+</head>
+<body>
+
+
+<p id="statistics"></p>
+
+<script>
+var obj, dbParam, xmlhttp, myObj, x, txt = "";
+obj = { "table":"customers", "limit":20 };
+dbParam = JSON.stringify(obj);
+xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+        
+        txt += "<div id='tableContainer-1'>"
+        	txt += "<div id='tableContainer-2'>"
+        txt += "<table class='zui-table'>"
+        	 txt += "<thead>";
+        txt += "<th>Statistics Type</th>";
+        txt += "<th>Value</th>";
+        txt += "</thead>";
+        for (x in myObj) {
+            txt += "<tr>";
+            txt +="<td>" + myObj[x].methodType + "</td>";
+            txt +="<td>" + myObj[x].count + "</td>";
+            txt +="</tr>"
+        }
+        txt += "</table>"  
+        	   txt += "</div>"
+               	txt += "</div>"
+        document.getElementById("statistics").innerHTML = txt;
+    }
+};
+xmlhttp.open("GET", "/travel/statistics_data", true);
+xmlhttp.setRequestHeader("Content-type", "application/json");
+xmlhttp.send("x=" + dbParam);
+
+</script>
+<body>
+
+</body>
+</html>

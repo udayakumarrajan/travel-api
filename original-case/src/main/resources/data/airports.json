@@ -1,0 +1,69 @@
+[ {
+	"id" : 1,
+	"code" : "DXB",
+	"name" : "Dubai",
+	"description" : "Dubai International Airport",
+	"country" : "AE"
+
+},
+{
+	"id" : 2,
+	"code" : "AMS",
+	"name" : "Amsterdam",
+	"description" : "Amsterdam Airport Schiphol",
+	"country" : "NL"
+
+},
+
+{
+	"id" : 3,
+	"code" : "MUC",
+	"name" : "Munich",
+	"description" : "Munich International Airport",
+	"country" : "GR"
+
+},
+{
+	"id" : 4,
+	"code" : "HEL",
+	"name" : "Helsinki",
+	"description" : "Helsinki Airport",
+	"country" : "NL"
+
+},
+
+{
+	"id" : 5,
+	"code" : "MAA",
+	"name" : "Chennai",
+	"description" : "Chennai International Airport",
+	"country" : "IN"
+
+},
+{
+	"id" : 6,
+	"code" : "EIN",
+	"name" : "Eindhoven",
+	"description" : "Eindhoven Airport",
+	"country" : "NL"
+
+},
+
+{
+	"id" : 7,
+	"code" : "FRA",
+	"name" : "Frankfurt",
+	"description" : "Frankfurt International Airport",
+	"country" : "FR"
+
+},
+{
+	"id" : 8,
+	"code" : "ZRH",
+	"name" : "Zurich",
+	"description" : "Zurich Airport Schiphol",
+	"country" : "SR"
+
+}
+
+]

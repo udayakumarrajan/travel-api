@@ -1,0 +1,205 @@
+[
+	{
+		"id": "1",
+		"currencyCode": "EUR",
+		"economyFare": "100.5",
+		"businessFare": "250.4",
+		"firtClassFare": "1200.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-04-31"
+		},
+		"applicableFlights": [
+			1,
+			2,
+			15
+		]
+	},
+	{
+		"id": "2",
+		"currencyCode": "EUR",
+		"economyFare": "500.5",
+		"businessFare": "850.4",
+		"firtClassFare": "1400.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			3,
+			4,
+			16
+		]
+	},
+	{
+		"id": "3",
+		"currencyCode": "EUR",
+		"economyFare": "310.5",
+		"businessFare": "750.4",
+		"firtClassFare": "1400.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			5,
+			6,
+			17
+		]
+	},
+	{
+		"id": "3",
+		"currencyCode": "EUR",
+		"economyFare": "210.5",
+		"businessFare": "950.4",
+		"firtClassFare": "1100.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			3,
+			5,
+			6,
+			18
+		]
+	},
+	{
+		"id": "4",
+		"currencyCode": "EUR",
+		"economyFare": "510.5",
+		"businessFare": "950.4",
+		"firtClassFare": "1500.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			7,
+			8,
+			9,
+			19
+		]
+	},
+	{
+		"id": "5",
+		"currencyCode": "EUR",
+		"economyFare": "610.5",
+		"businessFare": "950.4",
+		"firtClassFare": "1100.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			9,
+			10,
+			11,
+			20,
+			24
+		]
+	},
+	{
+		"id": "6",
+		"currencyCode": "EUR",
+		"economyFare": "110.5",
+		"businessFare": "350.4",
+		"firtClassFare": "900.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			12,
+			13,
+			14,
+			1,
+			21
+		]
+	},
+	{
+		"id": "7",
+		"currencyCode": "EUR",
+		"economyFare": "110.5",
+		"businessFare": "350.4",
+		"firtClassFare": "900.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			12,
+			13,
+			14,
+			1,
+			21
+		]
+	},
+	{
+		"id": "8",
+		"currencyCode": "EUR",
+		"economyFare": "80.5",
+		"businessFare": "390.4",
+		"firtClassFare": "100.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			12,
+			13,
+			14,
+			1,
+			22
+		]
+	},
+	{
+		"id": "9",
+		"currencyCode": "EUR",
+		"economyFare": "561.5",
+		"businessFare": "924.4",
+		"firtClassFare": "1404.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			12,
+			13,
+			14,
+			1,
+			23
+		]
+	},
+	{
+		"id": "10",
+		"currencyCode": "EUR",
+		"economyFare": "61.5",
+		"businessFare": "124.4",
+		"firtClassFare": "404.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "11",
+		"currencyCode": "EUR",
+		"economyFare": "41.5",
+		"businessFare": "54.4",
+		"firtClassFare": "404.4",
+		"faresApplicableDate": {
+			"startDate": "2019-04-01",
+			"endDate": "2019-12-01"
+		},
+		"applicableFlights": [
+			26,
+			14
+		]
+	}
+]

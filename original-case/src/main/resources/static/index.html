@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight Ticket Booking </title>
+	<link rel="stylesheet" href="static/css/style.css">
+	<link href='//fonts.googleapis.com/css?family=Century+Gothic:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Century+Gothic:400,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<style>
+	.ui-autocomplete {
+		background-color : white;
+	}
+	.ui-state-focus a { 
+		color:black; 
+	}
+	.custom-btn {
+	    background-color: #FFC107;
+	    border: none;
+	    color: white;
+	    padding: 15px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    cursor: pointer;
+	}
+	.zui-table {
+	    border: solid 1px #DDEEEE;
+	    border-collapse: collapse;
+	    border-spacing: 0;
+	    font: normal 13px Century Gothic, CenturyGothi,AppleGothic,sans-serif ;
+	    margin-left: 250px;
+	}
+	.zui-table thead th {
+	    background-color: #FFC107;
+	    border: solid 1px #DDEEEE;
+	    color: white;
+	    padding: 10px;
+	    text-align: left;
+	    font-size: 1.1em;
+	    font-weight: bold;
+	}
+	.zui-table tbody td {
+	    border: solid 1px #DDEEEE;
+	    color: white;
+	    padding: 10px;
+	}
+	.error {
+		color : #ff5707;
+	}
+	</style>
+</head>
+<body>
+	<h1>Flight Ticket Booking</h1>
+	<div class="main-agileinfo">
+		<div class="sap_tabs" id="form-search">			
+			<div id="horizontalTab">
+				<ul class="resp-tabs-list">
+					<li class="resp-tab-item"><span>One Way</span></li>
+				</ul>
+				<div class="clearfix"></div>
+				<div class="resp-tabs-container">
+					<div class="tab-1 resp-tab-content roundtrip">
+						<form id="form1">
+							<div class="from">
+								<h3>From</h3>
+								<input type="text" name="city1" class="city1"
+									placeholder="Type Departure City" required>
+							</div>
+							<div class="to">
+								<h3>To</h3>
+								<input type="text" name="city2" class="city2"
+									placeholder="Type Destination City" required>
+							</div>
+							<div class="clear"></div>
+							<div class="date">
+								<div class="depart">
+									<h3>Depart</h3>
+									<input id="datepicker1" name="depart" type="text"
+										onfocus="this.value = '';"
+										onblur="if (this.value == '') {this.value = getFormattedDate();}">
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="class">
+								<h3>Class</h3>
+								<select id="cabin" onchange="change_country(this.value)"
+									class="frm-field required">
+									<option value="E">Economy</option>
+									<option value="B">Business</option>
+									<option value="F">First class</option>
+								</select>
+
+							</div>
+							<div class="clear"></div>
+							<div class="numofppl">
+								<div class="adults">
+									<h3>Adult:(12+ yrs)</h3>
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value">
+												<span id="adults">1</span>
+											</div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="child">
+									<h3>Child:(2-11 yrs)</h3>
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value">
+												<span id="child">0</span>
+											</div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<br>
+							<input id="search" class="custom-btn" type="button" value="Search Flights">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="resp-tabs-container">
+	<div id="fare-table" style="display: none;">
+			<input type="button" class="custom-btn" value="Back" id="back-btn" style="margin-bottom: 15px;margin-left: 250px;">
+			<br>
+			<table class="zui-table">
+			    <thead>
+			        <tr>
+			            <th>Origin</th>
+			            <th>Destination</th>
+			            <th>Flight Number</th>
+			            <th>Departure Date</th>
+			            <th>Jounery Time</th>
+			            <th>Deaprt Time</th>
+			            <th>Arrival Time</th>
+			            <th>Economy</th>
+			             <th>Business</th>
+			        </tr>
+			    </thead>
+			    <tbody id="table-body">
+			        
+			    </tbody>
+			</table>
+		</div>
+		</div>
+	<!--script for portfolio-->
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/jquery.validate.min.js"></script>
+	<script src="static/js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#horizontalTab').easyResponsiveTabs({
+				type : 'default', //Types: default, vertical, accordion           
+				width : 'auto', //auto or any width like 600px
+				fit : true
+			// 100% fit in a container
+			});
+		});
+	</script>
+	<!--//script for portfolio-->
+	<!-- Calendar -->
+	<link rel="stylesheet" href="static/css/jquery-ui.css" />
+	<script src="static/js/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#datepicker,#datepicker1,#datepicker2,#datepicker3")
+					.datepicker({ minDate: 0 });
+		});
+	</script>
+	<!-- //Calendar -->
+	<!--quantity-->
+	<script>
+		$('.value-plus')
+				.on(
+						'click',
+						function() {
+							var divUpd = $(this).parent().find('.value'), newVal = parseInt(
+									divUpd.text(), 10) + 1;
+							if (newVal < 10)
+								divUpd.text(newVal);
+						});
+
+		$('.value-minus')
+				.on(
+						'click',
+						function() {
+							var divUpd = $(this).parent().find('.value'), newVal = parseInt(
+									divUpd.text(), 10) - 1;
+							if (newVal >= 0)
+								divUpd.text(newVal);
+						});
+	</script>	
+	<!--//quantity-->
+	<!--load more-->
+	<script>
+
+	$(document).ready(function () {
+		
+		$("#datepicker1").val(getFormattedDate());
+		
+		
+		var airtportURL = "/travel/searchAirports";
+		var fareURL = "/travel/searchFares";
+		
+		 $(".city1").autocomplete({
+	        delay: 100,
+	        minLength: 1,
+	        source: function (request, response) {
+	            	debugger;
+	        		var filter = $('.city1').val();
+	            
+	            $.ajax({
+				    url: airtportURL,
+				    data: {'filter':filter},
+				    type: 'POST',
+				    crossDomain: true,
+				    success: function(data) { 
+				    		var result = [];
+				    	
+				    		jQuery.each( data, function( i, airport ) {
+							result.push(airport.name+'('+airport.code+')');
+				    		});
+				    		response(result); 
+				    	},
+				    error: function(err) { alert(err); },
+				});
+	        }
+	    });
+	    
+	    $(".city2").autocomplete({
+	        delay: 100,
+	        minLength: 1,
+	        source: function (request, response) {
+	            
+	        		var filter = $('.city2').val();
+	            
+	            $.ajax({
+				    url: airtportURL,
+				    data: {'filter':filter},
+				    type: 'POST',
+				    crossDomain: true,
+				    success: function(data) { 
+				    		var result = [];
+				    		jQuery.each( data, function( i, airport ) {
+							result.push(airport.name+'('+airport.code+')');
+				    		});
+				    		response(result); 
+				    	},
+				    error: function(err) { alert(err); },
+				});
+	        }
+	    });
+	    
+	 // process the form
+	 $( "#form1" ).validate({
+		 rules : {
+			city1 : "required",
+			city2 : "required"
+		 },
+	    messages: {
+	        city1: "Origin is required!",
+	        city2: "Destination is required!"
+	    }
+	});
+	    $('#search').click(function() {
+	    		debugger;
+	    	if(!$("#form1").valid()) {
+	    		return;
+	    	}
+	    		console.log("Form Submit");
+
+	        // get the form data
+	        // there are many ways to get this data using jQuery (you can use the class or id also)
+	        var origin = $(".city1")[0].value;
+	        var destination = $(".city2")[0].value;
+	        
+	        var originAptCode = (origin) ? origin.trim().split("(")[1].replace(")", "") : "";
+	        var destAptCode = (destination) ? destination.trim().split("(")[1].replace(")", "") : "";
+	        
+	        var formData = {
+	            'origin'     : originAptCode,
+	            'destination'  : destAptCode,
+	            'originDesc' : origin,
+	            'destDesc'   : destination,
+	            'depart'   : $('#datepicker1').val(),
+	            'cabin'    : $('#cabin').val(),
+	            'adultCount'    : $('#adults').text(),
+	            'childCount'    : $('#child').text()
+	        };
+
+       	// process the form
+	        $.ajax({
+	            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+	            url         : fareURL, // the url where we want to POST
+	            data        : JSON.stringify(formData), // our data object
+	            contentType: "application/json; charset=utf-8",
+	            dataType: "json", // what type of data do we expect back from the server
+	            encode      : true
+	        })
+	            // using the done promise callback
+	            .done(function(data) {
+
+	                // log data to the console so we can see
+	                console.log(data); 
+	                $("#form-search").css("display", "none");
+	    				$("#fare-table").css("display", "block");
+	    				$("#table-body").empty();
+	    				$("#table-body").append(getTableBody(data));
+	                // here we will handle errors and validation messages
+	            });
+
+	        // stop the form from submitting the normal way and refreshing the page
+	        event.preventDefault();
+	    });
+		$("#back-btn").click(function(ev) {
+			$("#form-search").css("display", "block");
+			$("#fare-table").css("display", "none");
+		});
+		function getTableBody(data) {
+			var body = "";
+			var tr_begin = "";
+			var tr_end = "";
+			var td = "";
+			var fares = data.fares;
+			for(i=0;i<fares.length;i++) {
+				tr_begin = "<tr>";
+				tr_end = "</tr>";
+				td = "";
+				td = td + "<td>"+fares[i].origin+"</td>";
+				td = td + "<td>"+fares[i].destination+"</td>";
+				td = td + "<td>"+fares[i].flightNumber+"</td>";
+				td = td + "<td>"+fares[i].departure+"</td>";
+				td = td + "<td>"+fares[i].totalJouneryTime+"</td>";
+				td = td + "<td>"+fares[i].departTime+"</td>";
+				td = td + "<td>"+fares[i].arrivalTime+"</td>";
+				td = td + "<td>"+fares[i].economyFare+"</td>";
+				td = td + "<td>"+fares[i].businessFare+"</td>";
+				body = body + tr_begin + td + tr_end;
+			}
+			
+			return body;
+		}
+	});
+	
+	function getFormattedDate() {
+		var currentDt = new Date();
+	    var mm = currentDt.getMonth() + 1;
+	    if (mm.length == 1)
+	    	mm = "0"+mm;
+	    var dd = currentDt.getDate();
+	    var yyyy = currentDt.getFullYear();
+	    var date = mm + '/' + dd + '/' + yyyy;
+	    return date;
+	}
+		
+	</script>
+	<!-- //load-more -->
+
+
+
+</body>
+</html>

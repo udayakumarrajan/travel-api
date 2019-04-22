@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "airport.mock.file.path",
+    "type": "java.lang.String",
+    "description": "A description for 'airport.mock.file.path'"
+  },
+  {
+    "name": "flight.mock.file.path",
+    "type": "java.lang.String",
+    "description": "A description for 'flight.mock.file.path'"
+  }
+]}
